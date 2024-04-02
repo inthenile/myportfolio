@@ -1,0 +1,40 @@
+import reactlogo from "../src/img/icons8-react.png"
+import csslogo from "../src/img/icons8-css3.png"
+import jslogo from "../src/img/icons8-javascript.png"
+import htmllogo from "../src/img/icons8-html5.png"
+
+export default function Skills(){
+
+    const reactLogo = <img src={reactlogo} alt="react logo" />
+    const cssLogo = <img src={csslogo} alt="css logo" />
+    const jsLogo = <img src={jslogo} alt="javascript logo"  />
+    const htmlLogo = <img src={htmllogo} alt="html logo" />
+    
+
+    const languages = [jsLogo, reactLogo, htmlLogo, cssLogo];
+    const softSkills = ["Creative", "Communicative", "Teamplayer", "Fast-learner"]
+    let keyCount = 1;
+
+    const languageItems =  languages.map((language) => (
+        <span key={keyCount++}> {language} </span>
+    ))
+    
+    const softSkillItems = softSkills.map((skill) => (
+        <span key={keyCount++}> {skill} </span>
+    ))
+    return (
+        <div className="skills-wrapper">
+            <h1>Skills</h1>
+            <div className="skills">
+                <div className="languageSkills">
+                <h4>Languages:</h4>
+                    {languageItems}
+                </div>
+                <div className="softSkills">
+                <h4>Soft skills:</h4>
+                    {softSkillItems}
+                </div>
+            </div>
+        </div>
+    )
+}
