@@ -17,8 +17,11 @@ body{
 h1{
     color: var(--secondary-color);
 }
-h2,h3,h4,h5,h6{
+h2,h3,h4,h6{
     color: var(--tertiary-color);
+}
+h5{
+    color: var(--text-color);
 }
 p, label{
     color: var(--text-color);
@@ -27,6 +30,14 @@ p, label{
 ::selection{
     color: var(--primary-color);
     background-color: var(--text-color);
+}
+:disabled{
+    cursor: default;
+    opacity: 0.5;
+}
+:disabled:hover{
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
 }
 button{
     cursor: pointer;
@@ -131,7 +142,7 @@ button:hover{
 }
 .prevButton, .nextButton{
     border-radius: 50%;
-    scale:1.5;
+    scale:1.3;
 }
 .projects{
     margin: 20px;
@@ -210,6 +221,8 @@ textarea:focus, input:focus{
 
     .languageSkills, .softSkills{
         justify-content: center;
+        gap: 30px;
+        max-width: unset;
     }
     .project-info, .contact-form, .footer-wrapper{
         margin-top: 30px;
@@ -219,14 +232,9 @@ textarea:focus, input:focus{
         margin: 0 auto;
     }
     .projects{
-        margin: 0 auto;
-    }
-    .languageSkills, .softSkills{
-        gap: 30px;
-        max-width: unset;
-    }
-    .projects{
+        margin: 10px auto;
         min-width: unset;
+
     }
     input, label{
         display: block;
@@ -239,14 +247,17 @@ textarea:focus, input:focus{
 
     }
 }
-@media screen and (max-width:500px) {
+
+
+@media screen and (max-width:600px) {
     .nextButton, .prevButton{
         scale: 1;
     }
-
-    .languageSkills,.softSkills{
+    .languageSkills, .softSkills{
         display: inline-block;
     }
+
+
     span{
         padding: 10px;
     }

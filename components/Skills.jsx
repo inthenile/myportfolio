@@ -12,7 +12,7 @@ export default function Skills(){
     
 
     const languages = [jsLogo, reactLogo, htmlLogo, cssLogo];
-    const softSkills = ["Creative", "Communicative", "Teamplayer", "Fast-learner"]
+    const softSkills = ["Creative", "Communicative", "Teamplayer", "Fast-learner", "Time Management"]
     let keyCount = 1;
 
     const languageItems =  languages.map((language) => (
