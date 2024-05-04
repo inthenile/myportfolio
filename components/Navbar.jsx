@@ -11,7 +11,7 @@ export default function Navbar(){
             <br/>
             <div className="bio">
                 <p>I am an up-and-coming, self-taught developer. I take great pleasure in creating websites and learning new technologies. </p>
-                <p>I am currently studying PHP and MySQL to learn more about server-side programming. Thank you for visiting my portfolio page.</p>
+                <p>I am currently studying C# and MySQL to learn more about server-side programming. Thank you for visiting my portfolio page.</p>
             </div>
             <div className="socials">
                 <div className="github">
