@@ -203,8 +203,13 @@ textarea:focus, input:focus{
 @media screen and (max-width:1400px){
     .skills-and-projects{
         width: 100%;
-        margin: 0 30px;
 
+    }
+    .skills-and-projects h1, h4 {
+        margin: 0 20px;
+    }
+    .softSkills span {
+        margin: 0px 20px;
     }
     .projects{
         max-width: 400px;
@@ -258,14 +263,16 @@ textarea:focus, input:focus{
     .nextButton, .prevButton{
         scale: 1;
     }
-    .languageSkills, .softSkills{
+    .languageSkills, .technologies{
         display: inline-block;
     }
 
 
+
     span{
-        padding: 10px;
+        margin: 10px;
     }
+
     input, label{
         display: block;
         margin: 0 auto;
