@@ -5,12 +5,12 @@ export default function Projects(){
     const projects = [
         {index: 0, name: "React CRUD Blog", url:"https://github.com/inthenile/React-blog", technologies:"React, CSS, HTML", 
         description:"A simple blog CRUD website. You can create, read, update and delete blogs. There is also a search bar to search blogs by their title."},
-        {index: 1, name: "GW2 API App", url:"https://github.com/inthenile/gw2api", technologies:"Vanilla JavaScript, TailwindCSS", 
-        description:"The user can then select whatever endpoint they want to use and see information about their account with the help of an official API key."},
+        {index:1, name: "My Portfolio Page", url:"https://github.com/inthenile/myportfolio", technologies:"React, CSS, HTML", 
+            description:" A portfolio showcase I developed using React and Vite."},
         {index: 2, name: "Poetry Platform", url:"https://github.com/inthenile/poetry-React-app", technologies:"React, CSS, HTML", 
         description:"An application that implements a poetry database that makes fetch requests to retrieve poems and poets."},
-        {index:3, name: "My Portfolio Page", url:"https://github.com/inthenile/myportfolio", technologies:"React, CSS, HTML", 
-        description:" A portfolio showcase I developed using React and Vite."}
+        {index: 3, name: "GW2 API App", url:"https://github.com/inthenile/gw2api", technologies:"Vanilla JavaScript, TailwindCSS", 
+            description:"The user can then select whatever endpoint they want to use and see information about their account with the help of an official API key."}
     ]
     const [project, setProject] = useState(projects[0]);
 
