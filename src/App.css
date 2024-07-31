@@ -127,6 +127,7 @@ button:hover{
 .project-wrapper{
     display: flex;
     align-items: center;
+    min-height: 275px;
 }
 .project-wrapper button{
     min-width: 30px;
@@ -215,6 +216,9 @@ textarea:focus, input:focus{
         max-width: 400px;
         min-width: 400px;
     }
+    .project-wrapper{
+        min-height: 300px;
+    }
     .languageSkills, .softSkills, .technologies{
         max-width: unset;
     }
@@ -266,10 +270,12 @@ textarea:focus, input:focus{
     .languageSkills, .technologies{
         display: inline-block;
     }
-
-
-
-    span{
+    .softSkills{
+        display: block;
+    }
+    .softSkills span{
+        display: flex;
+        justify-content: center;
         margin: 10px;
     }
 

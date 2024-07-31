@@ -15,14 +15,16 @@ export default function Skills(){
     const gitLogo = <img src={gitlogo} alt="git logo" />
 
     const languages = [jsLogo, reactLogo, htmlLogo, cssLogo, tsLogo];
-    const technologies = [gitLogo]
+    const technologies = [gitLogo];
     const softSkills = ["Creative", "Communicative", "Teamplayer", "Fast-learner", "Time Management"]
     let keyCount = 1;
-
+    
     const languageItems =  languages.map((language) => (
         <span key={keyCount++}> {language} </span>
     ))
-    
+    const technologyItems = technologies.map((tech) => (
+        <span key={keyCount++}> {tech} </span>
+    ))
     const softSkillItems = softSkills.map((skill) => (
         <span key={keyCount++}> {skill} </span>
     ))
@@ -36,9 +38,9 @@ export default function Skills(){
                 </div>
                 <div className="technologies">
                     <h4> Technologies:</h4>
-                    {technologies}
+                    {technologyItems}
                 </div>
-                <div className="softSkills">
+                <div className="softSkills" >
                 <h4>Soft skills:</h4>
                     {softSkillItems}
                 </div>
