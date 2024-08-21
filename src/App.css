@@ -112,7 +112,9 @@ button:hover{
     flex-wrap: wrap;
     color: var(--text-color);
 }
-
+.languageSkills span{
+    margin: 10px;
+}
 /* projects */
 .project-info h1{
     margin-bottom: 20px;

@@ -4,6 +4,8 @@ import jslogo from "../src/img/icons8-javascript.png"
 import htmllogo from "../src/img/icons8-html5.png"
 import tslogo from "../src/img/icons8-typescript.png"
 import gitlogo from "../src/img/icons8-git.png"
+import phplogo from "../src/img/icons8-php-logo.png"
+import mysqllogo from "../src/img/icons8-mysql.png"
 
 export default function Skills(){
 
@@ -13,8 +15,10 @@ export default function Skills(){
     const htmlLogo = <img src={htmllogo} alt="html logo" />
     const tsLogo = <img src={tslogo} alt="typescript logo" />
     const gitLogo = <img src={gitlogo} alt="git logo" />
+    const phpLogo = <img src={phplogo} alt="php logo" />
+    const mysqlLogo = <img src={mysqllogo} alt="mySQL logo" />
 
-    const languages = [jsLogo, reactLogo, htmlLogo, cssLogo, tsLogo];
+    const languages = [jsLogo, reactLogo, htmlLogo, cssLogo, tsLogo, phpLogo, mysqlLogo] ;
     const technologies = [gitLogo];
     const softSkills = ["Creative", "Communicative", "Teamplayer", "Fast-learner", "Time Management"]
     let keyCount = 1;
