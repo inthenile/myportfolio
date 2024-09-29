@@ -1,10 +1,10 @@
-import './App.css'
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
 import Footer from '../components/Footer'
 import Skills from '../components/Skills'
 import ContactForm from '../components/ContactForm'
 import Header from '../components/Header'
+import './App.css'
 
 function App() {
  

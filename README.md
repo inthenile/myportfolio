@@ -17,4 +17,4 @@ This is a portfolio showcase I developed using React and Vite.
 # Credits
 Header image source: Pexels.com - Artist: Federico Orlandi
 
-CSS3, HTML5, JS and React logo source: https://icons8.com/
+Source for icons: https://icons8.com/
